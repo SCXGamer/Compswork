@@ -17,6 +17,9 @@
   </head>
 
   <body>
+    <div id="loading-container">
+        <div class="loading-spinner"></div>
+    </div>
     <div class="intro-container">
       <div class="background-image"></div>
       <div class="text-container">
@@ -64,5 +67,12 @@
 
 
     <script src="script.js"></script>
+    <script>
+        // JavaScript code to hide the loading spinner when the page has loaded
+        window.addEventListener('load', function() {
+            var loadingContainer = document.getElementById('loading-container');
+            loadingContainer.style.display = 'none';
+        });
+    </script>
   </body>
 </html>
