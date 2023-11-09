@@ -70,9 +70,14 @@
     <script>
         // JavaScript code to hide the loading spinner when the page has loaded
         window.addEventListener('load', function() {
-            var loadingContainer = document.getElementById('loading-container');
-            loadingContainer.style.display = 'none';
+          var loadingContainer = document.getElementById('loading-container');
+          loadingContainer.style.display = 'none';
         });
-    </script>
+    
+        // JavaScript code to scroll to the top of the page on refresh
+        window.onbeforeunload = function() {
+          window.scrollTo(0, 0);
+        };
+      </script>
   </body>
 </html>
